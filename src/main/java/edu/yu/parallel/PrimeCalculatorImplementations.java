@@ -7,7 +7,7 @@ package edu.yu.parallel;
  */
 
 public enum PrimeCalculatorImplementations {
-    SerialPrimes;
+    SerialPrimes, TwoThreadPrimes;
 
     public static PrimeCalculator
     PrimeCalculatorFactory (final PrimeCalculatorImplementations impl) {
@@ -15,6 +15,9 @@ public enum PrimeCalculatorImplementations {
 	switch(impl) {
 	case SerialPrimes:
 	    calculator = new SerialPrimes();
+	    break;
+	case TwoThreadPrimes:
+	    calculator = new TwoThreadPrimes();
 	    break;
 	default:
 	    throw new IllegalArgumentException("Unknown PrimeCalculator implementation: "
