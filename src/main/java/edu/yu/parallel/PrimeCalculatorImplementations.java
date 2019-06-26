@@ -7,12 +7,15 @@ package edu.yu.parallel;
  */
 
 public enum PrimeCalculatorImplementations {
-    SerialPrimes, SievedPrimes, TwoThreadPrimes;
+    ForkJoinedPrimes, SerialPrimes, SievedPrimes, TwoThreadPrimes;
 
     public static PrimeCalculator
     PrimeCalculatorFactory (final PrimeCalculatorImplementations impl) {
 	PrimeCalculator calculator = null;
 	switch(impl) {
+	case ForkJoinedPrimes:
+	    calculator = new ForkJoinedPrimes();
+	    break;
 	case SerialPrimes:
 	    calculator = new SerialPrimes();
 	    break;
