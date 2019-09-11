@@ -34,7 +34,7 @@
          "implementations under test" -->
     <dependency>
       <groupId>edu.yu.parallel</groupId>
-      <artifactId>InterfaceImpl</artifactId>
+      <artifactId>BabyMapInterfaceImpl</artifactId>
       <version>1.0</version>
     </dependency>
 
