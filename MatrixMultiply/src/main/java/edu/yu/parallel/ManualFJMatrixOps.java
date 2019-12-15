@@ -20,7 +20,7 @@ public class ManualFJMatrixOps {
    * @param threshold matrices whose dimensions are less than equal to
    * the threshold will be processed with a serial algorithm, must be
    * greater than 0
-   * @return The result of multiplying the two matrices.
+   * @return The result of adding the two matrices.
    * @throws InterruptedException if interrupted
    * @throws ExecutionException if execution goes wrong
    */
@@ -34,7 +34,6 @@ public class ManualFJMatrixOps {
    *
    * @param a Represents a "matrix"
    * @param b Represents a "matrix"
-   * @return The result of multiplying the two matrices.
    * @param addThreshold matrices whose dimensions are less than equal
    * to the threshold will have matrix addition operations processed
    * with a serial algorithm, must be greater than 0.  (Note: matrix
@@ -43,6 +42,7 @@ public class ManualFJMatrixOps {
    * @param multiplyThreshold matrices whose dimensions are less than
    * equal to the threshold will have matrix multiplication operations
    * processed with a serial algorithm, must be greater than 0
+   * @return The result of multiplying the two matrices.
    * @throws InterruptedException if interrupted
    * @throws ExecutionException if execution goes wrong
    */

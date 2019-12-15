@@ -14,7 +14,7 @@ public class SerialMatrixOps {
    *
    * @param a Represents a "matrix"
    * @param b Represents a "matrix"
-   * @return the results of multipling the two matrices.
+   * @return the results of adding the two matrices.
    */
   public double[][] add(final double[][] a, final double[][] b) {
       return new double[0][0];

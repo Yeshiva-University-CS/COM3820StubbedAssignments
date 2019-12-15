@@ -17,7 +17,7 @@ public class JDKFJMatrixOps {
    * @param threshold matrices whose dimensions are less than equal to
    * the threshold will be processed with a serial algorithm, must be
    * greater than 0
-   * @return The result of multiplying the two matrices.
+   * @return The result of adding the two matrices.
    */
   public double[][] add(final double[][] a, final double[][] b,
                         final int threshold)
@@ -29,7 +29,6 @@ public class JDKFJMatrixOps {
    *
    * @param a Represents a "matrix"
    * @param b Represents a "matrix"
-   * @return The result of multiplying the two matrices.
    * @param addThreshold matrices whose dimensions are less than equal
    * to the threshold will have matrix addition operations processed
    * with a serial algorithm, must be greater than 0.  (Note: matrix
@@ -38,6 +37,7 @@ public class JDKFJMatrixOps {
    * @param multiplyThreshold matrices whose dimensions are less than
    * equal to the threshold will have matrix multiplication operations
    * processed with a serial algorithm, must be greater than 0
+   * @return The result of multiplying the two matrices.
    */
   public double[][] multiply(final double[][] a, final double[][] b,
                              final int addThreshold,
