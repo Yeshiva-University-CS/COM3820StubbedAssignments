@@ -27,7 +27,6 @@ void *sub1(void *t)
   printf("sub1: thread=%ld Condition variable signal received.",tid);
   printf(" count=%d\n",count);
   count++;
-  finalresult += count;
   printf("sub1: thread=%ld count now equals=%d finalresult=%e. Done.\n",
          tid,count,finalresult);
   pthread_mutex_unlock(&count_mutex);
