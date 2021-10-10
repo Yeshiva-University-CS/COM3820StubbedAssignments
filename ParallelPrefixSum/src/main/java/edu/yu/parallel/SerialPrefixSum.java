@@ -1,17 +1,20 @@
 package edu.yu.parallel;
 
-/** Serial implementation of prefix sum.
+/** Serial implementation of the PrefixSum API.
  *
+ * @author Avraham Leff
  */
+
+import java.math.BigDecimal;
 
 public class SerialPrefixSum implements PrefixSum {
 
-  /** No-arg constructor
+  /** No-arg constructor: students MAY NOT add another constructor signature.
    */
   public SerialPrefixSum() {}
 
   @Override
-  public int[] prefixSum(int[] input) {
-      return input;
+  public BigDecimal[] prefixSum(BigDecimal[] input) {
+      return null;
   }
 }

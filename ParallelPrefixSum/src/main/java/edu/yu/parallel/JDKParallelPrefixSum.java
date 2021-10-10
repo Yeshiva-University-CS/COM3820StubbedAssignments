@@ -1,17 +1,21 @@
 package edu.yu.parallel;
 
-/** Wrapper implementation of the JDK's parallel prefix sum.
+/** Implementation of the PrefixSum API should be a (very thin) wrapper of the
+ * JDK's Arrays.parallelPrefix() API.
  *
+ * @author Avraham Leff
  */
+
+import java.math.BigDecimal;
 
 public class JDKParallelPrefixSum implements PrefixSum {
 
-  /** No-arg constructor
+  /** No-arg constructor: students MAY NOT add another constructor signature.
    */
   public JDKParallelPrefixSum() {}
 
   @Override
-  public int[] prefixSum(int[] input) {
-      return input;
+  public BigDecimal[] prefixSum(BigDecimal[] input) {
+      return null;
   }
 }

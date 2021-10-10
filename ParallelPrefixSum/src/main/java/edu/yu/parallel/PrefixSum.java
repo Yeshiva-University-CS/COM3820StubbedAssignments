@@ -1,9 +1,13 @@
 package edu.yu.parallel;
 
-/** Interface defining an API for calculating prefix sums
+/** Interface defining an API for calculating a prefix sum over an array of
+ * BigDecimal
  *
  * @author Avraham Leff
  */
+
+import java.math.BigDecimal;
+
 public interface PrefixSum {
 
   /** Computes and returns the inclusive prefix sum of each element of the
@@ -20,7 +24,14 @@ public interface PrefixSum {
    * @return array whose elements are the inclusive prefix sum of the input
    * @see https://en.wikipedia.org/wiki/Prefix_sum
    */
-  int[] prefixSum(int[] input);
+  public BigDecimal[] prefixSum(BigDecimal[] input);
+
+  
+  /** System property that specifies the threshold at which a Fork-Join
+   * implementation of prefix-sum should switch over to a serial
+   * implementation.
+   */
+  public final static String threshold = "edu.yu.parallel.prefixsum.threshold";
 }
 
 
